@@ -1,0 +1,29 @@
+<assembly 
+          xmlns="http://maven.apache.org/ASSEMBLY/2.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/4.0.0 https://maven.apache.org/xsd/maven-2.0.0.xsd">
+ <id>zip</id>   
+ <formats>
+  <format>zip</format>
+ </formats>      
+ <includeBaseDirectory>false</includeBaseDirectory>
+ <dependencySets>
+ <dependencySet>
+ <scope>test</scope>
+ <includes>
+ <include>*:jar:*</include>
+ </includes>
+ <outputDirectory>/Dependency-jars</outputDirectory>
+ </dependencySet>
+ </dependencySets>
+ <fileSets>
+ <fileSet>
+ <directory>${proyect.buil.directory}</directory>
+ <outputDirectory>./</outputDirectory>
+ <includes>
+ <include>*.jar</include>
+ </includes>
+ </fileSet>
+ </fileSets>
+ 
+</assembly>
