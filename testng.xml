@@ -3,9 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Test.Navegador"/>
-      <class name="Test.ControlTrack"/>
-      <class name="Test.Whats"/>
+    <!-- <class name="Test.ControlTrack"/>-->
+       <class name="Test.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

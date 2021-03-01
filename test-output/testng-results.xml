@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-13T03:00:10Z" name="Default suite" finished-at="2021-01-13T03:00:26Z" duration-ms="15244">
+  <suite started-at="2021-03-01T16:42:01Z" name="Suite" finished-at="2021-03-01T16:42:05Z" duration-ms="3652">
     <groups>
     </groups>
-    <test started-at="2021-01-13T03:00:10Z" name="Default test" finished-at="2021-01-13T03:00:26Z" duration-ms="15244">
-      <class name="Test.Whats">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Test.Whats@68f4865]" started-at="2021-01-12T21:00:10Z" name="SetUp" finished-at="2021-01-12T21:00:19Z" duration-ms="8153" status="PASS">
+    <test started-at="2021-03-01T16:42:01Z" name="Test" finished-at="2021-03-01T16:42:05Z" duration-ms="3652">
+      <class name="Test.Login">
+        <test-method signature="login()[pri:0, instance:Test.Login@71e9a896]" started-at="2021-03-01T10:42:01Z" name="login" finished-at="2021-03-01T10:42:04Z" duration-ms="3073" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="test()[pri:0, instance:Test.Whats@68f4865]" started-at="2021-01-12T21:00:19Z" name="test" finished-at="2021-01-12T21:00:25Z" duration-ms="6651" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Test.Login@71e9a896]" started-at="2021-03-01T10:42:04Z" name="afterClass" finished-at="2021-03-01T10:42:05Z" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="testend()[pri:0, instance:Test.Whats@68f4865]" started-at="2021-01-12T21:00:25Z" name="testend" finished-at="2021-01-12T21:00:26Z" duration-ms="426" status="PASS">
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="testend()[pri:0, instance:Test.Login@71e9a896]" started-at="2021-03-01T10:42:05Z" name="testend" finished-at="2021-03-01T10:42:05Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testend -->
-      </class> <!-- Test.Whats -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Test.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
