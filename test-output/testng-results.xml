@@ -2,6 +2,7 @@
 <testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-03-03T02:22:53Z" name="Suite" finished-at="2021-03-03T02:23:02Z" duration-ms="9096">
     <groups>
     </groups>
@@ -20,6 +21,22 @@
           </reporter-output>
         </test-method> <!-- testend -->
         <test-method is-config="true" signature="testend()[pri:0, instance:Test.Login@1827a871]" started-at="2021-03-02T20:23:02Z" name="testend" finished-at="2021-03-02T20:23:02Z" duration-ms="0" status="PASS">
+=======
+  <suite started-at="2021-03-02T15:42:48Z" name="Suite" finished-at="2021-03-02T15:42:58Z" duration-ms="9745">
+    <groups>
+    </groups>
+    <test started-at="2021-03-02T15:42:48Z" name="Test" finished-at="2021-03-02T15:42:58Z" duration-ms="9745">
+      <class name="Test.Login">
+        <test-method signature="login()[pri:0, instance:Test.Login@6b9267b]" started-at="2021-03-02T09:42:48Z" name="login" finished-at="2021-03-02T09:42:57Z" duration-ms="8807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Test.Login@6b9267b]" started-at="2021-03-02T09:42:57Z" name="afterClass" finished-at="2021-03-02T09:42:58Z" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="testend()[pri:0, instance:Test.Login@6b9267b]" started-at="2021-03-02T09:42:58Z" name="testend" finished-at="2021-03-02T09:42:58Z" duration-ms="1" status="PASS">
+>>>>>>> d25511e98f7256735bea874bfc420ead5860698a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testend -->
