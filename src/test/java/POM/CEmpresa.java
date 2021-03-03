@@ -3,8 +3,6 @@ package POM;
 
 import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import io.appium.java_client.android.AndroidDriver;
 
 public class CEmpresa {
 	
@@ -13,7 +11,6 @@ public class CEmpresa {
 	    String user,pass;
 	    String nempresa="Almexa";
 	    
-	    public AndroidDriver<WebElement> driver; 	    
 	    
 		public void empresa() {
 			try {
@@ -26,7 +23,6 @@ public class CEmpresa {
     private static CEmpresa cemp;
 
  	private CEmpresa() {
- 		this.driver=b.driv();//se trae el driver de Base
  	}
 
  	public static CEmpresa getInstance() {

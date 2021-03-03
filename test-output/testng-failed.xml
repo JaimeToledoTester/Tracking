@@ -3,13 +3,16 @@
 <suite parallel="none" name="Failed suite [Suite]">
   <test parallel="none" name="Test(failed)">
     <classes>
-      <class name="Test.Login">
+      <class name="Test.Empresas">
         <methods>
-          <include name="login"/>
-          <include name="afterClass"/>
-          <include name="testend"/>
+          <include name="selempresa"/>
         </methods>
-      </class> <!-- Test.Login -->
+      </class> <!-- Test.Empresas -->
+      <class name="Test.Global">
+        <methods>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- Test.Global -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
