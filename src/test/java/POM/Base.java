@@ -14,12 +14,8 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
 
-<<<<<<< HEAD
 	public AndroidDriver<WebElement> driver;
-=======
-	private AndroidDriver<WebElement> driver;
->>>>>>> d25511e98f7256735bea874bfc420ead5860698a
-	
+
 	public AndroidDriver<WebElement>driv(){
 		return driver;
 	}
