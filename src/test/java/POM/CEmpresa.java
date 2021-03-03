@@ -7,16 +7,18 @@ import org.openqa.selenium.By;
 public class CEmpresa {
 	
 	    Base b=Base.getInstance();
-		
+	    By ok= By.xpath("//android.widget.Button[@text='OK']");
 	    String user,pass;
-	    String nempresa="Almexa";
+	    String nempresa="UNILEVER";
 	    
 	    
 		public void empresa() {
 			try {
-			    By empresa= By.xpath("//*[text()='"+nempresa+"']");
+			    By empresa= By.xpath("//android.widget.TextView[@text='"+nempresa+"']");			    
 				b.wait(empresa);
-				assertTrue(b.isPresent(empresa));
+				b.clic(empresa);
+				b.clic(ok);
+				assertTrue(true);
 			}catch (Exception e) {System.out.println("Error en test: "+e);}
 		}
 	   
