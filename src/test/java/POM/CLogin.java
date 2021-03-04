@@ -46,17 +46,10 @@ public class CLogin {
         	try {
         	b.wait(asser);
         	assertTrue(b.isPresent(asser));
-//        	screenshot();
         	}catch(Exception e) {System.out.println("Error en asser, Clogin "+e);}
         }
         
-//        public void screenshot() {
-//        	try {
-//        WebDriver augment= new Augmenter().augment(driver);
-//		File srcfile=((TakesScreenshot)augment).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(srcfile,new File("test1.png"));
-//			}catch (Exception e) {System.out.println("Error en login mscreenshot: "+e);}
-//        }
+
         
 
         
