@@ -1,26 +1,30 @@
 package POM;
 
+import static org.junit.Assert.assertNotNull;
+
 import java.net.URL;
+import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
 
-	public AndroidDriver<WebElement> driver;
+	public AndroidDriver<MobileElement> driver;
 
-	public AndroidDriver<WebElement>driv(){
+	public AndroidDriver<MobileElement>driv(){
 		return driver;
 	}
 	
-	public AndroidDriver<WebElement> generatedriver() {
+	public AndroidDriver<MobileElement> generatedriver() {
 		try {		
 			DesiredCapabilities caps = new DesiredCapabilities();
 			 caps.setCapability(CapabilityType.PLATFORM_NAME, "Android");
@@ -34,15 +38,20 @@ public class Base {
 		        caps.setCapability("noSign", true);
 		        caps.setCapability("autoGrantPermissions", true);
 		        URL url=new URL("http://127.0.0.1:4723/wd/hub");
-			    driver= new AndroidDriver<WebElement>(url,caps);   
+			    driver= new AndroidDriver<MobileElement>(url,caps);
+
 		    }catch(Exception e) {System.out.println("ERROR en Base Método generatedriver: "+e);}
 		return driver;
 	}
 	
-	public WebElement findElement(By locator) {
+	public MobileElement findElement(By locator) {
 		return driver.findElement(locator);
 	}
 
+	public List<MobileElement> findElements(By locator) {
+		return driver.findElements(locator);
+	}
+	
 	public Boolean isPresent(By locator) {
 		return driver.findElements(locator).size() > 0;
 	}
@@ -53,6 +62,18 @@ public class Base {
 
 	public String getText(By locator) {
 		return driver.findElement(locator).getText();
+	}
+	
+	MobileElement listitem;
+	public MobileElement scroll(String text) {
+		try {
+        listitem= (MobileElement) driver.findElement
+		(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""+text+"\").instance(0))"));		
+//		System.out.println(listitem2.getLocation());   
+        listitem.click();//clic si encuentra la empresa
+        assertNotNull(listitem.getLocation());
+	    }catch(Exception e) {System.out.println("No se encontro la empresa");}
+		return listitem;
 	}
 
 	public void clic(By locator) {
