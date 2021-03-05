@@ -1,16 +1,13 @@
 package POM;
 
-import static org.junit.Assert.assertNotNull;
 
 import java.net.URL;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -69,10 +66,8 @@ public class Base {
 		try {
         listitem= (MobileElement) driver.findElement
 		(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""+text+"\").instance(0))"));		
-//		System.out.println(listitem2.getLocation());   
         listitem.click();//clic si encuentra la empresa
-        assertNotNull(listitem.getLocation());
-	    }catch(Exception e) {System.out.println("No se encontro la empresa");}
+	    }catch(Exception e) {System.out.println("No se encontro: "+text);}
 		return listitem;
 	}
 
@@ -93,7 +88,7 @@ public class Base {
 			WebDriverWait load = new WebDriverWait(driver, 10);
 			load.until(ExpectedConditions.presenceOfElementLocated(locator));
 		} catch (Exception e) {
-			System.out.println("No se encontro el elemento en el tiempo de espera");
+			System.out.println("No se encontro el elemento en el tiempo de espera"+locator);
 		}
 	}
 
