@@ -17,9 +17,7 @@ public class Base {
 
 	public AndroidDriver<MobileElement> driver;
 
-	public AndroidDriver<MobileElement>driv(){
-		return driver;
-	}
+
 	
 	public AndroidDriver<MobileElement> generatedriver() {
 		try {		

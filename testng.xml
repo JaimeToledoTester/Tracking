@@ -5,9 +5,9 @@
     <classes>
       <class name="Test.Global"/>
       <class name="Test.Login"/>
-      <class name="Test.Empresas"/>
+      <!--<class name="Test.Empresas"/>
       <class name="Test.Viaje"/>
-      <class name="Test.Stop"/>
+      <class name="Test.Stop"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

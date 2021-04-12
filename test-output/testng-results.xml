@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="5" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-05T03:26:48Z" name="Suite" finished-at="2021-03-05T03:27:08Z" duration-ms="19748">
+  <suite started-at="2021-04-12T17:58:39Z" name="Suite" finished-at="2021-04-12T17:58:53Z" duration-ms="13848">
     <groups>
     </groups>
-    <test started-at="2021-03-05T03:26:48Z" name="Test" finished-at="2021-03-05T03:27:08Z" duration-ms="19748">
-      <class name="Test.Viaje">
-        <test-method signature="selempresa()[pri:0, instance:Test.Viaje@1c25b8a7]" started-at="2021-03-04T21:27:05Z" name="selempresa" finished-at="2021-03-04T21:27:06Z" duration-ms="1133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selempresa -->
-      </class> <!-- Test.Viaje -->
-      <class name="Test.Stop">
-        <test-method signature="selempresa()[pri:0, instance:Test.Stop@43c67247]" started-at="2021-03-04T21:27:06Z" name="selempresa" finished-at="2021-03-04T21:27:08Z" duration-ms="2102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selempresa -->
-      </class> <!-- Test.Stop -->
-      <class name="Test.Empresas">
-        <test-method signature="selempresa()[pri:0, instance:Test.Empresas@499b2a5c]" started-at="2021-03-04T21:26:55Z" name="selempresa" finished-at="2021-03-04T21:27:05Z" duration-ms="9729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selempresa -->
-      </class> <!-- Test.Empresas -->
+    <test started-at="2021-04-12T17:58:39Z" name="Test" finished-at="2021-04-12T17:58:53Z" duration-ms="13848">
       <class name="Test.Global">
-        <test-method signature="testeo()[pri:0, instance:Test.Global@344344fa]" started-at="2021-03-04T21:26:48Z" name="testeo" finished-at="2021-03-04T21:26:48Z" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Test.Global@74667e6a]" started-at="2021-04-12T12:58:39Z" name="beforeMethod" finished-at="2021-04-12T12:58:53Z" duration-ms="13742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testeo()[pri:0, instance:Test.Global@74667e6a]" started-at="2021-04-12T12:58:53Z" name="testeo" finished-at="2021-04-12T12:58:53Z" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeo -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Test.Global@344344fa]" started-at="2021-03-04T21:27:08Z" name="afterSuite" finished-at="2021-03-04T21:27:09Z" duration-ms="906" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Test.Global@74667e6a]" started-at="2021-04-12T12:58:53Z" name="afterSuite" finished-at="2021-04-12T12:58:53Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- Test.Global -->
       <class name="Test.Login">
-        <test-method signature="login()[pri:0, instance:Test.Login@66238be2]" started-at="2021-03-04T21:26:48Z" name="login" finished-at="2021-03-04T21:26:55Z" duration-ms="6748" status="PASS">
+        <test-method signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Test.Login@236ae13d]" started-at="2021-04-12T12:58:53Z" name="login" data-provider="AllData" finished-at="2021-04-12T12:58:53Z" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[["2711202001","2711202002","2711202003","2711202004","2711202005"]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Entrada]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[notitajaime]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
